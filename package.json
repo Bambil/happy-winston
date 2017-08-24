@@ -1,6 +1,6 @@
 {
   "name": "happy-winston",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Winston log server based on hapi.js",
   "main": "index.js",
   "scripts": {
