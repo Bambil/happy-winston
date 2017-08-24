@@ -8,5 +8,6 @@
  * +===============================================
  */
 module.exports = {
-  Winstond: require('./lib/winstond')
+  Winstond: require('./lib/winstond'),
+  transports: require('winston/lib/winston/transports')
 }
