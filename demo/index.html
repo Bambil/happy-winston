@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Happy-Winston</title>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <h1>Logs:</h1>
+    <div id="logs">
+      <p v-for="log in logs">
+        {{log.level}}: {{log.message}} - {{log.meta}}
+      </p>
+    </div>
+    <script>
+      /*
+      global
+      Vue
+      io
+      */
+      const vm = new Vue({
+        el: '#logs',
+        data: {
+          logs: []
+        }
+      })
+      const socket = io(window.location.protocol + '//' + window.location.hostname + ':' + window.location.port)
+      socket.on('log', function (msg) {
+        vm.logs.push(msg)
+      })
+    </script>
+  </body>
+</html>
