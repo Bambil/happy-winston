@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bambil/happy-winston#readme",
   "dependencies": {
+    "hapi": "^16.5.2",
     "winston": "^2.3.1"
   },
   "devDependencies": {
