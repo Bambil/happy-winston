@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/bambil/happy-winston.git"
   },
-  "author": "Parham Alvani <parham.alvani@gmail.com>",
+  "contributors":[
+    "Parham Alvani <parham.alvani@gmail.com>",
+    "Iman Tabrizian <tabrizian@outlook.com>"
+  ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/bambil/happy-winston/issues"
