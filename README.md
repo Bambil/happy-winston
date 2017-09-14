@@ -1,4 +1,9 @@
 # happy-winston
+![npm-downloads](https://img.shields.io/npm/dw/happy-winston.svg?style=flat-square)
+![npm-license](https://img.shields.io/npm/l/happy-winston.svg?style=flat-square)
+[![npm-version](https://img.shields.io/npm/v/happy-winston.svg?style=flat-square)](https://www.npmjs.com/package/happy-winston)
+
+## Introdcution
 
 A logging server built on top of [winston](https://github.com/winstonjs/winston) and
 [hapi.js](https://hapijs.com/), capable of receiving and querying logs.
@@ -15,7 +20,7 @@ the main capabilities of a winston transport.
 
 ### Creating a winstond server
 
-``` js
+```js
 const happyWinston = require('happy-winston')
 
 const server = new happyWinston.Winstond()
@@ -37,7 +42,7 @@ server.on('listening', () => {
 
 ### Communicating with a winstond server
 
-``` js
+```js
 const winston = require('winston')
 
 winston.add(winston.transports.Http, {
